@@ -1,0 +1,358 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding:0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+.h1-size{
+    font-size:25px;
+}
+.contain{
+    height:100vh;
+    padding:0;
+}
+
+
+.gray-bg{
+    background-color: #e7e7e7;
+}
+
+/*-------------------------------------  Animations  -------------------------------------*/
+
+.hidden{
+    opacity:0;
+    filter: blur(5px);
+    transform: translateY(40%);
+    transition: all 0.8s;
+}
+
+.show{
+    opacity:1; 
+    filter:blur(0);
+    transform: translateY(0);
+    transition:all 0.8s;
+}
+
+.rotate{
+    transform:rotateY(70deg);
+    transition:all 1s;
+}
+
+.un-rotate{
+    transform:rotateY(0deg);
+    transition:all 1s;
+}
+
+.move{
+    filter:blur(5px);
+    transform: translateX(-500px);
+    transition:all 1s;
+}
+
+.un-move{
+    filter:blur(0);
+    transform: translateX(0px);
+    transition:all 1s;
+}
+
+/*-------------------------------------  Nav-bar  -------------------------------------*/
+.navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #59737e;
+    border:2px solid black;
+    box-shadow: inset 0px -2px 10px black;
+    border-color: transparent black black black;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    top:0 ;
+    position:fixed;
+    z-index: 5;
+}
+.navi-list li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px 10px 10px 10px;
+}
+
+.navi-link{
+    color:rgb(36, 35, 36);
+    text-decoration: none;
+    font-weight: bold;
+    padding:20px;
+    transition: color 0.3s;
+}
+
+.navi-link-logo{
+    color:rgb(36, 35, 36);
+    text-decoration: none;
+    font-weight: bold;
+    padding:20px;
+    transition: all 0.3s;
+}
+
+.navi-link-logo:hover{
+    color:white;
+    text-shadow:3px 3px 5px black;
+    transition: all 0.3s;
+}
+
+.navi-link:hover{
+    color:white;
+    text-shadow:3px 3px 5px black;
+    transition: all 0.3s;
+}
+.logo{
+    margin:0 15px;
+}
+
+/*-------------------------------------  OverView  -------------------------------------*/
+.Overview{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.quarter-circle{
+    content:"" ;
+    position:absolute;
+    width: 600px;
+    height: 600px;
+    margin-top:50px;
+    left: 50px;
+    background: linear-gradient(180deg, #59737e 45%, rgba(255,255,255,1) 70%);
+    box-shadow: inset 5px 200px 200px rgba(40, 53, 58,0.5) ;
+    border-radius: 50%;
+}
+.ov-logo{
+     
+    display: block;
+    width: 700px;
+    margin:auto;
+    margin-top:100px;
+    filter:grayscale(0.2);
+}
+.img-logo{
+    margin-top:100px;
+    position: relative;
+    left: 95px;
+    margin-bottom:70px;
+}
+
+.ov-font{
+    text-align: center;
+    
+}
+.ov-font h2 {
+    color:rgb(10, 118, 133);
+    font-size: 40px;
+}
+
+.ov-font p{
+    color:rgb(129, 42, 163);
+    font-size: 30px;
+}
+.ov-buy{
+    box-sizing: border-box;
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    padding:20px;
+    cursor:pointer;
+    background-color:rgb(5, 50, 109);
+    border-radius:50px;
+    font-size: 20px;
+}
+.ov-buy:hover{
+    color:rgb(5, 50, 109);
+    background-color: #e7e7e7;
+    border: 1px solid rgb(5, 50, 109);
+    transition: all ease-in-out 0.3s;
+}
+
+.color-changer{
+    margin-top:40px;
+    display: inline-flex;
+    gap: 20px;
+    width:60em;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    content: "";
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.4),5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#green{
+    background-color: green;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#white{
+    background-color: whitesmoke;
+}
+
+#dark{
+    background-color: rgba(89,115,126,1);
+}
+
+.circle:hover{
+    transform: scale(1.2);
+}
+
+
+/* ------------------------------------ Camera ------------------------ */
+
+.spec{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom:0;
+    padding:70px 50px 0 50px;
+}
+.spec-img{
+    width:500px;
+}
+
+.spec-font{
+    text-align: center;
+}
+.spec-font h1{
+    text-align: center;
+    font-size:40px;
+    color:rgb(128, 29, 128);
+    margin:20px;
+    text-shadow:inset 3px 3px 5px rgba(136, 1, 136, 0.8);
+}
+.spec-font p{
+    display: inline-block;
+    font-size:20px;
+    color:black;
+    margin:20px;
+    width:800px;
+    padding:10px;
+}
+
+.spec-font h2{
+    font-size: 25px;
+    color:rgb(156, 0, 156);
+    margin:20px;
+}
+.cam-img{
+    filter:drop-shadow(8px 43px 12px black);
+    border: 5px solid black;
+    border-color: rgb(42, 11, 65);
+    padding:0 20px;
+    margin-bottom:100px;
+}
+
+/* ------------------------------------ Display ------------------------ */
+
+.dis-img{
+    position: relative;
+    left:28px;
+    top:20px;
+    margin-bottom: 150px;
+    filter:drop-shadow(0px 0px 10px black);
+}
+.quarter-circle-black{
+    content:"" ;
+    position:absolute;
+    width: 600px;
+    height: 600px;
+    margin-top:50px;
+    left: 50px;
+    border-radius: 50%;
+    background: rgb(13,12,12);
+    background: radial-gradient(circle, rgb(0, 0, 0) 10%, #e7e7e7 60%);
+}
+
+/* ------------------------------------ WaterProof ------------------------ */
+
+.wat-img{
+    width:400px;    
+    position: relative;
+    margin:50px;
+    left:50px;
+    top:20px;
+    margin-bottom:150px;
+    filter:drop-shadow(12px 40px 18px black)
+}   
+
+.wat-padding{
+    padding:0px 50px;
+}
+
+.quarter-circle-blue{
+    content:"" ;
+    position:absolute;
+    width: 600px;
+    height: 600px;
+    margin-top:50px;
+    left: 50px;
+    border-radius: 50%;
+}
+/* ------------------------------------ Notch ------------------------ */
+
+.notch{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+}
+.notch-img{
+    width:400px;
+}
+.island-font h1{
+    text-align: center;
+    font-size:40px;
+    color:rgb(128, 29, 128);
+    margin:20px;
+    text-shadow:inset 3px 3px 5px rgba(136, 1, 136, 0.8);
+}
+
+/* ------------------------------------ Box Content ------------------------ */
+
+.box{
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f7;
+}
+
+/* ------------------------------------ Buy ------------------------ */
+
+.buy{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buy-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:70px;
+    font-size:20px;
+}
+
+.buy-font{
+    margin-bottom:30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* ------------------------------------ Contact Us ------------------------ */
+
+.contact{
+    font-size: 20px;
+}

@@ -155,22 +155,22 @@ body{
     color:rgb(129, 42, 163);
     font-size: 30px;
 }
+
 .ov-buy{
-    box-sizing: border-box;
     display: inline-block;
-    color:white;
-    text-decoration: none;
     padding:20px;
     cursor:pointer;
+    color:white;
     background-color:rgb(5, 50, 109);
     border-radius:50px;
     font-size: 20px;
+    transition:all 0.3s;
 }
 .ov-buy:hover{
     color:rgb(5, 50, 109);
     background-color: #e7e7e7;
     border: 1px solid rgb(5, 50, 109);
-    transition: all ease-in-out 0.3s;
+    transition: all 0.3s;
 }
 
 .color-changer{
@@ -189,6 +189,7 @@ body{
     cursor: pointer;
     border-radius: 50%;
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.4),5px 5px 5px rgba(0, 0, 0, 0.4);
+    transition:all 0.2s;
 }
 
 #green{
@@ -209,6 +210,7 @@ body{
 
 .circle:hover{
     transform: scale(1.2);
+    transition:all 0.2s;
 }
 
 

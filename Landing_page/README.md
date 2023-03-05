@@ -1,6 +1,6 @@
 -> This is the Source code of Level 1 Task 1 ( Landing Page ).
 
--> I have created a page for iPhone 14 pro.
+-> I have created a product page for iPhone 14 pro.
 
 -> I have used below languages and frameworks to create this page.
 

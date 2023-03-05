@@ -4,7 +4,7 @@
 
 -> I have used below languages and frameworks to create this page.
 
--> The Images I have used are copyrightable.
+-> I have used Images from Google.
 
     1. HTML
     2. CSS
